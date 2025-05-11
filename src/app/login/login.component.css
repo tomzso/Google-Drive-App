@@ -1,0 +1,73 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  gap: 50px;
+  border: 2px solid #ccc;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 5vh;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.signin-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.g_id_signin {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center; 
+    text-align: center;
+  }
+  .logo {
+    margin: 0 auto 10px auto; 
+  }
+
+  .logo-container,
+  .signin-container {
+    align-items: center;
+    margin-left: 0; 
+  }
+
+  .logo-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .logo-container h2 {
+    font-size: 1.2rem; 
+  }
+}

@@ -1,0 +1,160 @@
+.google-drive-button {
+  background-color: transparent;
+  border: 2px solid #cccccc;
+  border-left: none;
+  border-right: none;
+  color: #000000;
+  padding: 15px 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.google-drive-button span {
+  flex: 1;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0; 
+}
+
+.google-drive-button:hover {
+  background-color: #e0e0e0;
+  color: #000000;
+  border-color: #cccccc;
+}
+
+td {
+  height: 100%;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0; 
+  margin-left: 6vh; 
+}
+
+td:first-child {
+  width: 95%;
+}
+
+td:last-child {
+  width: 5%;
+}
+
+.google-drive-delete-button {
+  background-color: transparent;
+  border: 2px solid #cccccc;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  color: #000000;
+  padding: 15px 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  transform: translateX(-100%);
+  max-width: 50px;
+}
+
+.google-drive-delete-button span {
+  flex: 1;
+  text-align: center;
+}
+
+.google-drive-header {
+  background-color: transparent;
+  border: 2px solid #cccccc;
+  border-left: none;
+  border-right: none;
+  color: #000000;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.google-drive-header span {
+  flex: 1;
+  text-align: left;
+}
+
+.google-drive-header:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #cccccc;
+  width: 100%;
+}
+
+.google-drive-root {
+  background-color: transparent;
+  border: 2px solid #cccccc;
+  border-left: none;
+  border-right: none;
+  color: #000000;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.google-drive-root span {
+  flex: 1;
+  text-align: left;
+}
+
+.google-drive-root:hover {
+  background-color: #acbdf7;
+  color: #000000;
+  border-color: #cccccc;
+}
+
+.container {
+  padding-left: 40px;
+}
+
+@media (max-width: 768px) {
+  .column-last-modified {
+    display: none;
+  }
+  table {
+    margin-left: 0vh;
+  }
+}

@@ -1,0 +1,47 @@
+<div class="container">
+  <h1><strong>{{ combinedPath }}</strong></h1>
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <button class="google-drive-header">
+          <span>Name</span>
+          <span class="column-last-modified">Last modified</span>
+          <span>Size</span>
+        </button>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+        <button (dblclick)="navigateBack()" class="google-drive-root">
+          <img src="https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder+31"
+               alt="Google Drive Image" height="30px" width="30px" style="margin-right: 10px;">
+          <span>..</span>
+        </button>
+      </td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+    <tr *ngFor="let folder of folders">
+        <td>
+            <button (dblclick)="navigateFolder(folder.id, folder.name)" class="google-drive-button">
+                <img [src]="folder.iconLink" alt="Google Drive Image" height="30px" width="30px"
+                    style="margin-right: 10px;">
+                <span>{{folder.name}}</span>
+                <span class="column-last-modified">{{ folder.modifiedTime | date: 'yyyy-MM-dd' }}</span>
+                <span> --- </span>
+            </button>
+        </td>
+        <td>
+            <button (dblclick)="deleteFolder(folder.id)" class="google-drive-delete-button" #deleteBtn>
+                <i class="fa-solid fa-trash-can"></i>
+            </button>
+        </td>
+    </tr>
+</table>

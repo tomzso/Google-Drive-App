@@ -1,4 +1,47 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+# Node.js dependencies
+node_modules/
+
+# Angular build output
+dist/
+build/
+.angular/
+
+# IDE/editor settings
+.vscode/
+.vs/
+slnx.sqlite
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Archives
+*.zip
+
+# Environment-specific files
+src/environments/*.ts
+src/assets/config/config.json
+
+# Compiled output
+*.js
+*.js.map
+
+# Temporary files
+*.tmp
+
+# OS or editor lock files
+*.swp
+*.swo
+*.bak
+
+# Angular cache
+.cache/
+
+# Optional: ignore HW submission artifacts
+hw.zip
 
 # Compiled output
 /dist
@@ -36,7 +79,3 @@ yarn-error.log
 /libpeerconnection.log
 testem.log
 /typings
-
-# System files
-.DS_Store
-Thumbs.db

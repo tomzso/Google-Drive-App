@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AuthGuard } from './services/authGuard.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'my-app';
+  activateRouterOutlet: boolean = false;
+
+  constructor(private authGuard: AuthGuard) {
+    // Check if the user is authenticated (logined in)
+    this.activateRouterOutlet = !authGuard.canActivate();
+  }
+
 }

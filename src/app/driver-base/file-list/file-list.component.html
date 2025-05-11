@@ -1,0 +1,19 @@
+<table>
+  <tbody>
+    <tr *ngFor="let file of files">
+      <td>
+        <button (dblclick)="downloadFile(file.id, file.name)" class="google-drive-button">
+          <img [src]="file.iconLink" alt="File" height="30px" width="30px" style="margin-right: 10px;">
+          <span class="file-name">{{file.name}}</span>
+          <span class="column-last-modified">{{ file.modifiedTime | date: 'yyyy-MM-dd' }}</span>
+          <span class="file-size">{{ getFormattedSizeInMB(file.size) }}</span>
+        </button>
+      </td>
+      <td>
+        <button (dblclick)="deleteFile(file.id)" class="google-drive-delete-button">
+          <i class="fa-solid fa-trash-can"></i>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,21 @@
+.input-field {
+  width: 100%;
+  outline-color: rgb(255, 255, 255);
+}
+
+::ng-deep .input-field.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: blue;
+  border-color: blue;
+}
+
+.action-button {
+  margin-left: 10px;
+  font-size: 16px;          
+  padding: 8px 16px;        
+  border: none;           
+  background: none;         
+  color: blue;              
+  cursor: pointer;           
+}
+
+
