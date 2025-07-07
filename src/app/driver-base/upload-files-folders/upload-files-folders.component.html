@@ -2,7 +2,7 @@
     <tr>
       <td style="text-align: left;">
         <div class="centered-container">
-            <label for="fileInput" class="custom-file-input google-drive-button">
+            <label for="fileInput" class=" google-drive-button">
                 <i class="fa-solid fa-cloud-arrow-up"></i>   Upload file
             </label>
             <input id="fileInput" type="file" (change)="onFileSelected($event)" style="display: none;">
@@ -10,9 +10,10 @@
       </td>
       <td style="text-align: right;">
         <div class="centered-container">
-            <button (click)="openCreateFolderDialog()" class="custom-file-input google-drive-button">
+            <button id="fileCreateFolder" (click)="openCreateFolderDialog()" class=" google-drive-button">
               <i class="fa-solid fa-folder-plus"></i> New folder
             </button> 
+            <input id="fileInput" type="file" style="display: none;">
         </div>
       </td>
     </tr>
